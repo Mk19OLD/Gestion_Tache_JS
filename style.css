@@ -1,0 +1,130 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    /* display: flex; */
+    justify-content: center;
+    align-items: flex-start; /* Alignement en haut pour éviter le centrage vertical total si le contenu est long */
+    min-height: 100vh;
+    margin: 20px;
+}
+.main{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 1rem;
+}
+.container_custom {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* max-width: 500px; */
+}
+
+h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.input-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#task-input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#add-task-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.2s ease;
+}
+
+#add-task-button:hover {
+    background-color: #0056b3;
+}
+
+#loadButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.2s ease;
+}
+
+#loadButton:hover {
+    background-color: #0056b3;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    background-color: #f9f9f9;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #eee;
+    transition: background-color 0.2s ease;
+}
+
+#task-list li.completed {
+    text-decoration: line-through;
+    color: #888;
+    background-color: #e9ecef;
+}
+
+.task-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.task-actions .complete-button {
+    color: #28a745;
+    background-color: #fff;
+}
+
+.task-actions .complete-button:hover {
+    background-color: #e2f4e4;
+}
+
+.task-actions .delete-button {
+    color: #dc3545;
+    background-color: #fff;
+}
+
+.task-actions .delete-button:hover {
+    background-color: #fde8e9;
+}
